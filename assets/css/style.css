@@ -33,13 +33,11 @@ h2 {
     width: 60%;
 }
 .game-container {
-    background: blueviolet;
     margin: auto;
-    width: 50%;
+    height:100px;
 }
 
 .game-info {
-    background:cadetblue;
     margin-left: auto;
     margin-right: auto;
 }
@@ -68,7 +66,22 @@ h2 {
     float: right;
 }
 
+.game-wrap {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    grid-gap: 25px;
+    padding: 20px;
+    margin: auto;
+}
 
+.game-card {
+    margin: 0 auto;
+    width: 80px;
+    background-color: #fff;
+    border-radius: 50%;
+    display: inline-block;
+    box-shadow: 0 8px 16px 0 rgba(225,225,225,0.2), 0 6px 20px 0 rgba(225,225,225,0.19);
+}
 
 
 
