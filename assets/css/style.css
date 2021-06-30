@@ -24,7 +24,7 @@ html {
 }
 
 h2 {
-    font-family: Righteous;
+    font-family: Raleway;
     color: #fff;
     text-align: center;
     font-size: x-large;
@@ -70,17 +70,55 @@ h2 {
     display: grid;
     grid-template-columns: auto auto auto auto;
     grid-gap: 25px;
-    padding: 20px;
     margin: auto;
 }
 
 .game-card {
     margin: 0 auto;
-    width: 80px;
+    width: 100px;
     background-color: #fff;
     border-radius: 50%;
+    border: 2px solid #14213D;
     display: inline-block;
-    box-shadow: 0 8px 16px 0 rgba(225,225,225,0.2), 0 6px 20px 0 rgba(225,225,225,0.19);
+    box-shadow: 0 10px 18px 0 rgba(225,225,225,0.2), 0 6px 20px 0 rgba(225,225,225,0.19);
+}
+
+.footer {
+    width: 100%;
+    height: fit-content;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    clear: both;
+    background-color: #14213D;
+    color: #ffffff;
+    text-align: center;
+    font-family: Righteous;
+    margin-top: 40px;
+}
+
+.footer p {
+    text-align: center;
+    color: #fff;
+    padding-top: 20px;
+}
+
+
+.social-media {
+    text-align: center;
+    margin: auto;
+}
+
+.social-media > li {
+    display: inline-block;
+    padding-bottom: 30px;
+    margin-bottom: 30px;
+    text-decoration: none;
+}
+
+.social-media i {
+    font-size: large;
+    color: #ffffff;
 }
 
 
