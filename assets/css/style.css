@@ -54,6 +54,18 @@ h2 {
     float: left;
 }
 
+#start-button {
+    background-color:#FCA311;
+    border-radius: 20px;
+    font-family: Righteous;
+    color: #fff;
+    text-align: center;
+    font-size: large;
+    margin: 20px;
+    padding: 20px;
+    float: left;
+}
+
 #flips{
     background-color:#FCA311;
     border-radius: 20px;
