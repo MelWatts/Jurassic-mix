@@ -84,7 +84,7 @@ document.addEventListener('DOMContentLoaded', () => {
             var card = document.createElement('img')
             card.setAttribute('src', 'assets/images/orange.jpg')
             card.setAttribute('data-id', i)
-            card.addEventListener('click', flipcard)
+            card.addEventListener('click', flipCard)
             grid.appendChild(card)
         }
     }
@@ -92,7 +92,7 @@ document.addEventListener('DOMContentLoaded', () => {
     
     //check for matches
     function checkForMatch() {
-        var cards = documnt.querySelectorAll('img')
+        var cards = document.querySelectorAll('img')
         const optionOneId = cardsChosenId[0]
         const optionTwoId = cardsChosenId[1]
         if (cardsChosen[0] === cardsChosen[1]) {
@@ -124,7 +124,8 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     }
     
-    
     createBoard()
+
+})
     
-    })
+   
