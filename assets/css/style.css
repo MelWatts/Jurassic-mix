@@ -15,16 +15,17 @@ html {
     background-size: cover;
   }
 
-.grid {
+  .grid {
     display: flex;
     flex-wrap: wrap;
-    height: 400px;
+    height: 320px;
     width: 400px;
-
+    grid-gap: 25px;
+    margin: auto;
 }
 
 
-/*
+
 .page-header {
     font-family: Righteous;
     color: #fff;
