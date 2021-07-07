@@ -4,29 +4,24 @@
     box-sizing: border-box;
   }
   
-  .row::after {
+.row::after {
     content: "";
     clear: both;
     display: table;
   }
 
-html { 
+html {
+  min-height: 100vh;
+}
+
+body { 
     background: url('../images/background.jpg') no-repeat center center fixed; 
     background-size: cover;
   }
 
-  .grid {
-    display: flex;
-    flex-wrap: wrap;
-    height: 400px;
-    width: 400px;
-    grid-gap: 25px;
-    margin: auto;
-    margin-top: 150px;
-}
 
 .page-header {
-    font-family: Righteous;
+    font-family: Righteous, serif;
     color: #fff;
     text-align: center;
     font-size: large;
@@ -35,7 +30,7 @@ html {
 }
 
 h2 {
-    font-family: Raleway;
+    font-family: Raleway, serif;
     color: #fff;
     text-align: center;
     font-size: x-large;
@@ -45,24 +40,111 @@ h2 {
 }
 
 .game-container {
-  margin: auto;
-
+  display: grid;
+  grid-template-columns: repeat(4, auto);
+  grid-gap: 10px;
+  margin: 50px;
+  justify-content: center;
 }
 
+.game-info-container {
+  grid-column: 1 / -1;
+  display: flex;
+  justify-content: space-between;
+}
 
 .game-info {
-  display: inline-block;
     background-color:#FCA311;
     border-radius: 20px;
-    font-family: Righteous; 
+    font-family: Righteous, serif; 
     color: #fff;
-    text-align: center;
     font-size: large;
-    margin: 20px;
-    padding: 5px;
-    float: left;
     box-shadow: 0 10px 18px 0 rgba(225,225,225,0.2), 0 6px 20px 0 rgba(225,225,225,0.19);
 }
+
+.card {
+  position: relative;
+  background-color: blue;
+  height: 100px;
+  width: 80px;
+}
+
+.card-face {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  backface-visibility: hidden;
+  border-radius: 12px;
+  border-width: 1px;
+  border-style: solid;
+}
+
+.card.visible .card-back {
+  transform: rotate(-180deg);
+}
+
+.card.visible .card-front {
+  transform: rotateY(180deg);
+}
+
+.card-back {
+  border-color: #273617;
+}
+
+.card-front {
+  transform: rotateX(180deg);
+}
+
+.card-value {
+  transition: transform 100ms ease-in-out;
+  transform: scale(.9);
+}
+
+.card-front:hover .card-value {
+  transform: scale(1);
+}
+
+.claws {
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  color: #fff;
+  /*align-self: flex-start;
+  transform: translateY(-10);
+  transition: transform 100ms ease-in-out;*/
+}
+
+.claws-top-left {
+  transform: rotate(270deg);
+  top: 0;
+  left: 0;
+}
+
+.claws-top-right {
+  top: 0;
+  right: 0;
+}
+
+.claws-bottom-left {
+  transform: rotate(180deg);
+  bottom: 0;
+  left: 0;
+}
+
+.claws-bottom-right {
+  transform: rotate(90deg);
+  bottom: 0;
+  right: 0;
+}
+
+.card-back:hover .claws {
+  transform: translateY(0);
+}
+
 
 footer {
     position: inherit;
@@ -75,7 +157,7 @@ footer {
 }
 
 footer p {
-    font-family: Righteous;
+    font-family: Righteous, serif;
     text-align: center;
     color: #fff;
     margin-top: 15px;

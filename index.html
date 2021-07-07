@@ -10,6 +10,7 @@
     <title>Jurassic Mix-up</title>
 </head>
 <body>
+  <audio src="/workspace/Jurassic-mix/roar.mp3.mp3" id="mySound" loop= "loop"></audio>
   <header class="page-header">
     <h1>Jurassic Mix-up!</h1>
   </header>
@@ -19,22 +20,57 @@
         can you pair them back up so we can get them back in safe and sound... before they find YOU!</h2>
     </div>
 
-    <section>
-      <div class="game-container col-s-11 col-m-8 col-8">
-            <div class="game-info">
-              <h3>Time 0.00<span id="timer"></span></h3>
-            </div>
-
-            <div class="game-info">
-              <h3> Results:<span id="result"></span></h3>
-            </div>
+    <div class="game-container">
+      <div class="game-info-container">
+        <div class="game-info">
+          Time <span id="time-remaining">100</span>
+        </div>
+        <div class="game-info">
+          Flips <span id="flips">0</span>
+        </div>
       </div>
-    </section>
 
-    <section>
-      <div class="grid">
+
+      <div class="card visible">
+        <div class="card-back card-face">
+          <img class="claws claws-top-left" 
+          src="assets/images/clawscorner.png" 
+          alt="Shows front of card, claws scratching"></img>
+          <img class="claws claws-top-right" 
+          src="assets/images/clawscorner.png" 
+          alt="Shows front of card, claws scratching"></img>
+          <img class="claws claws-bottom-left" 
+          src="assets/images/clawscorner.png" 
+          alt="Shows front of card, claws scratching"></img>
+          <img class="claws claws-bottom-right" 
+          src="assets/images/clawscorner.png" 
+          alt="Shows front of card, claws scratching"></img>
+          <img class="eyes" 
+          src="assets/images/eyes.jpg" 
+          alt="Scary dinosaur eyes"></img>
+        </div>
+        <div class="card-front card-face">
+          <img class="card-value" src="assets/images/dino-1.jpg" alt="First dinosaur">
+        </div>
       </div>
-    </section>
+
+      <div class="card"></div>
+      <div class="card"></div>
+      <div class="card"></div>
+      <div class="card"></div>
+      <div class="card"></div>
+      <div class="card"></div>
+      <div class="card"></div>
+      <div class="card"></div>
+      <div class="card"></div>
+      <div class="card"></div>
+      <div class="card"></div>
+      <div class="card"></div>
+      <div class="card"></div>
+      <div class="card"></div>
+      <div class="card"></div>
+    </div>
+
 
     <footer>
       <p>Copyright: Jurassic Mix-up 2021</p>

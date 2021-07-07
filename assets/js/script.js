@@ -67,6 +67,8 @@ document.addEventListener('DOMContentLoaded', () => {
             img: 'assets/images/dino-8.jpg'
         },
     ]
+
+    
     
     cardArray.sort(() => 0.5 - Math.random())
     
@@ -97,13 +99,10 @@ document.addEventListener('DOMContentLoaded', () => {
         const optionTwoId = cardsChosenId[1]
         if (cardsChosen[0] === cardsChosen[1]) {
             alert('You found a match')
-            cards[optionOneId].setAttribute('src', 'assets/images/white.jpg')
-            cards[optionTwoId].setAttribute('src', 'assets/images/white.jpg')
             cardsWon.push(cardsChosen)
         }   else {
             cards[optionOneId].setAttribute('src', 'assets/images/orange.jpg')
             cards[optionTwoId].setAttribute('src', 'assets/images/orange.jpg')
-            alert('Sorry, try again')
         }
         cardsChosen = []
         cardsChosenId = []
