@@ -1,3 +1,18 @@
+class AudioController {
+    constructor() {
+        this.bgMusic = new Audio('assets/audio/roar.mp3');
+        this.flipSound = new Audio('assets/audio/roar.mp3');
+        this.matchSound = new Audio('assets/audio/roar.mp3');
+        this.victorySound = new Audio('assets/audio/roar.mp3');
+        this.gameOverSound = new Audio('assets/audio/roar.mp3');
+        this.bgMusic.volume = 0.5;
+        this.bgMusic.loop = true;
+    }
+    startMusic() {
+        this.bgMusic.play();
+    }
+}
+
 document.addEventListener('DOMContentLoaded', () => {
 
 function ready() {
@@ -8,6 +23,8 @@ function ready() {
         overlay.addEventListener('click', () => {
             overlay.classList.remove('visible');
             // game.startGame();
+            let audioController = new AudioController ();
+            audioController.startMusic();
         });
     });
     cards.forEach(card => {
