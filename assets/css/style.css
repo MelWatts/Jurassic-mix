@@ -85,12 +85,28 @@ h2 {
   transition: transform 500ms ease-in-out
 }
 
-.card:hover .card-back {
+.card.visible .card-back {
   transform: rotateY(-180deg);
 }
 
-.card:hover .card-front {
+.card.visible .card-front {
   transform: rotateY(0);
+}
+
+.card.matched .card-value {
+  animation: dance 1s linear infinite 500ms;
+}
+
+@keyframes dance {
+  0%, 100% {
+    transform: rotate(0);
+  }
+  25% {
+    transform: rotate(-30deg);
+  }
+  75% {
+    transform: rotate(30deg);
+  }
 }
 
 .card-back {
@@ -123,6 +139,40 @@ h2 {
   transform: translateY(0);
 }
 
+.overlay-text {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  justify-content: center;
+  align-items: center;
+  z-index: 100;
+  color: #FCA311;
+  font-family: Righteous, serif;
+}
+
+.overlay-text.visible {
+  display: flex;
+  flex-direction: column;
+  animation: overlay-grow 500ms forwards;
+}
+
+@keyframes overlay-grow {
+  from {
+    background-color: rgba(0, 0, 0, 0);
+    font-size: 0;
+  }
+  to {
+    background-color: rgba(0, 0, 0, .8);
+    font-size: xx-large;
+  }
+}
+
+.overlay-text-small {
+  font-size: .3em;
+}
 
 footer {
     position: inherit;
@@ -160,60 +210,22 @@ footer p {
 
 
 
+  
+  @media only screen and (max-width: 390px) {
+    /* For tablets: */
+    .game-container {
+      grid-template-columns: repeat(2, auto);
+    }
 
+    .game-info-container {
+      flex-direction: column;
+      align-items: center;
+    }
 
-
-
-
-
-
-
-
- 
-
-@media only screen and (min-width: 300px) {
-    /* For mobile: */
-    .col-s-1 {width: 8.33%;}
-    .col-s-2 {width: 16.66%;}
-    .col-s-3 {width: 25%;}
-    .col-s-4 {width: 33.33%;}
-    .col-s-5 {width: 41.66%;}
-    .col-s-6 {width: 50%;}
-    .col-s-7 {width: 58.33%;}
-    .col-s-8 {width: 66.66%;}
-    .col-s-9 {width: 75%;}
-    .col-s-10 {width: 83.33%;}
-    .col-s-11 {width: 91.66%;}
-    .col-s-12 {width: 100%;}
+    .game-info {
+      padding: 15px;
+    margin: 20px;
+    }
   }
   
-  @media only screen and (min-width: 600px) {
-    /* For tablets: */
-    .col-m-1 {width: 8.33%;}
-    .col-m-2 {width: 16.66%;}
-    .col-m-3 {width: 25%;}
-    .col-m-4 {width: 33.33%;}
-    .col-m-5 {width: 41.66%;}
-    .col-m-6 {width: 50%;}
-    .col-m-7 {width: 58.33%;}
-    .col-m-8 {width: 66.66%;}
-    .col-m-9 {width: 75%;}
-    .col-m-10 {width: 83.33%;}
-    .col-m-11 {width: 91.66%;}
-    .col-m-12 {width: 100%;}
-  }
-  @media only screen and (min-width: 768px) {
-    /* For desktop: */
-    .col-1 {width: 8.33%;}
-    .col-2 {width: 16.66%;}
-    .col-3 {width: 25%;}
-    .col-4 {width: 33.33%;}
-    .col-5 {width: 41.66%;}
-    .col-6 {width: 50%;}
-    .col-7 {width: 58.33%;}
-    .col-8 {width: 66.66%;}
-    .col-9 {width: 75%;}
-    .col-10 {width: 83.33%;}
-    .col-11 {width: 91.66%;}
-    .col-12 {width: 100%;}
-  }
+ 
