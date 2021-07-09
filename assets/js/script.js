@@ -25,7 +25,7 @@ class AudioController {
     }
     victory() {
         this.stopMusic();
-        this.victory.play();
+        this.victorySound.play();
     }
     gameOver() {
         this.stopMusic();
@@ -92,7 +92,7 @@ class MixOrMatch {
         card1.classList.add('matched');
         card2.classList.add('matched');
         this.audioController.match();
-        if(this.matchedCards.length === this.cardsArray)
+        if(this.matchedCards.length === this.cardsArray.length)
             this.victory();
     }
 
