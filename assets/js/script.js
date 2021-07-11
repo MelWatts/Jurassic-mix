@@ -128,6 +128,7 @@ class MixOrMatch {
         clearInterval(this.countDown);
         this.audioController.victory();
         document.getElementById('victory-text').classList.add('visible');
+        this.hideCards();
     }
 
     shuffleCards()  {
@@ -171,6 +172,3 @@ if(document.readyState === 'loading') {
     ready();
 }
 })
-
-
-//new MixOrMatch 
