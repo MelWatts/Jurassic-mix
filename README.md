@@ -92,14 +92,16 @@ My site has changed considerably from the intitial wireframe, as I had my initia
 ## Features
 
 This section contains some of the features this project contains:
-* The homepage will be the landing page showing a large hero image to draw people in, and a short paragraph showcasing how the website is of use to the user and an additional more info button.
-* Scrolling down to the paragraph about mental health and a couple of nice images, I've added a contact us button here in case the user want to make contact.
-* I have added a static image of some sun shining through trees, my thoughts were calming and hopeful in worrying times.
-* I have added 3 images of young 'happy' children and some bullet point of tips to keep children happy.
-* Further down is more information on the signs of mental health issues to look for and how to support.
-* Then a couple of meditation videos and wellbeing tips to watch so assist the user and their child.
-* Some helpful links to other sites including an online chat room for like minded people, to book therapy sessions and general help.
-* Ending the website with a simple contact form and links to our social media platforms to keep in contact or follow us.
+* My site starts with a 'Click to Start' button' once click, the game will start, the timer will start and the dinosaurs will start roaring.
+* The visuals to my site starts with a basic header 'Jurassic Mix'
+* Then there is a timer thta begins when the 'Click to Start' button is pressed and the game will begin .
+* There is a Flips element also, which tells you how many times you have made a flip.
+* below there are 16 individual cards, they are all hidden and all you see is a dinosaur eye which has an animation when hovered over.
+* If the user makes a match the game will play a sound effect and the cards will animate and stay visible.
+* If the user runs out of time the 'Game Over' sign will appear and they have the option to click to restart the game.
+* Alternatively if they find all the matches before the timer, the Victory sign will apear with the option to restart the game and the victory sound affects will play.
+* After the game there is a contact form for the user to leave any feedbak or contact us.
+* Ending teh page with a simple footer to social media sites which will open in a seperate tab.
 
 
 ## Technologies
@@ -109,6 +111,7 @@ This project was build using the following technologies:
 ### Languages
 * HTML5
 * CSS3
+* JavaScript
 
 ### Libraries and online resources:
 * Google Chrome Dev Tools: for testing purposes.
