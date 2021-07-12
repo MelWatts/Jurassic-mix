@@ -24,19 +24,38 @@ body {
     font-family: Righteous, serif;
     color: #fff;
     text-align: center;
-    font-size: large;
-    padding-top: 100px;
+    font-size: xx-large;
+    padding-top: 50px;
     margin: auto;
 }
 
+h1 {
+  font-family: Righteous, serif;
+  color: #fff;
+  text-align: center;
+  font-size: xx-large;
+  padding-top: 20px;
+  margin: auto;
+}
+
 h2 {
-    font-family: Raleway, serif;
-    color: #fff;
-    text-align: center;
-    font-size: x-large;
-    padding-top: 50px;
-    margin: auto;
-    width: 60%;
+  font-family: Raleway, serif;
+  color: #fff;
+  text-align: center;
+  font-size: large;
+  padding-top: 50px;
+  margin: auto;
+  width: 60%;
+}
+
+h3 {
+  font-family: Raleway, serif;
+  color: #fff;
+  text-align: center;
+  font-size: large;
+  padding-top: 50px;
+  margin: auto;
+  width: 60%;
 }
 
 .game-container {

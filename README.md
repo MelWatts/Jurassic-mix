@@ -199,7 +199,9 @@ Once I had a general idea on how to run testing I followed all steps for each of
 * stray end tag x 16 times - refering to the </img>
 * stray start tag - refering to the <script>
 
-* No errors for teh css
+* No errors for the css
+
+* JSHint had 18 warnings
 
 
 * HTML-validator results: [index.html](assets/images/html_validator_results.JPG)
@@ -212,20 +214,15 @@ Once I had a general idea on how to run testing I followed all steps for each of
 
 ### Bugs
 
-#### Media query
+#### JavaScript
 
-After writing my media query for a mobile, I noticed that, that was overwriting my desktop version. After a lot of meetings with my mentor and lots of chat and help from my fellow students on Slack, it was decided that all of my website was not set in columns or grids, once this was done everything was much clearer.
-
-#### Images
-
-Early on I was having a hard time getting the images to display properly. They looked good on a desktop version but wasn't scaling properly for tablet or mobile. This was due to using px height and width instead of %.
-
+I found writting my own JavaScript quite complex and time consuming, after more research on w3school and youTube, (youtube found in credits section) I overcome most bugs, functions not working, flip cards, re-arrange carsd at the start of each game.
 
 
 ## Deployment
 
 This project is deployed using gitpod in combination with github pages.
-I used gitpod to write all code and seeing it is linked with github it was easy to use the terminal to commit, unfortunately in my haste I have committed a few spelling errors of which I did a quick google search to see if I could rectify this, I couldn't see a way.
+I used gitpod to write all code and seeing it is linked with github it was easy to use the terminal to commit.
 
 ### GitHub Pages
 
@@ -276,19 +273,22 @@ $ git clone https://github.com/YOUR-USERNAME/YOUR-REPOSITORY
 * README template from code institute fellow student [README.md template](https://github.com/ThijsTerporten/Climbing-Traveller/blob/master/README.md).
 * Design inspiration from [Web Dev Simplified](https://www.youtube.com/watch?v=28VfzEiJgy4)
 * All animations and audio Javascript from [PortEXE](https://www.youtube.com/watch?v=3uuQ3g92oPQ)
+* My 5 year old daughter and her love for dinosaurs, she has enjoyed playing this game.
 
 ## Content
 
-All content in this project are taken from researching the website for helpful links and tips for Children with mental health issues.
+All content in this project are taken from my 5 year old daughters love for dinosaurs..
 
 ## Media 
 
-* All images where taken  [Pexels](https://www.pexels.com/nl-nl/).
-* All video are from [YouTube](https://www.youtube.com/). 
+* All images were taken  [Pixabay](https://pixabay.com/).
+* All audio clips were  [Freesound](https://freesound.org/)
+* Images were sized using Adobe Photshop
+* Wireframes were created using Adobe InDesign
 
 ## Acknowledgements 
 
-I would like to acknowledge my mentor Antonio Rodriguez. He reassured me when I was doubtful of myself and my skills, and send me useful information during our mentoring sessions about things he saw I was struggling with. Especially during the media query, I was writing hundreds of lines of css, he showed me a simpler solution  - columns and grids - .
+I would like to acknowledge my mentor Antonio Rodriguez. He reassured me when I was doubtful of myself and my skills, and send me useful information during our mentoring sessions about things he saw I was struggling with. And all the community on Slack, which I relied on heavily for JavaScript help.
 
 **This project was created for educational purposes only, credit for all images goes to their owners**
 
