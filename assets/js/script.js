@@ -1,3 +1,6 @@
+// Design inspiration from [Web Dev Simplified](https://www.youtube.com/watch?v=28VfzEiJgy4)
+// All animations and audio Javascript from [PortEXE](https://www.youtube.com/watch?v=3uuQ3g92oPQ)
+
 document.addEventListener('DOMContentLoaded', () => {
 
 class AudioController {
@@ -171,4 +174,4 @@ if(document.readyState === 'loading') {
 } else {
     ready();
 }
-})
+});

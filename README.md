@@ -120,57 +120,51 @@ This project was build using the following technologies:
 * FontAwesome: used for icons in the logo. [FontAwesome](https://fontawesome.com/)
 * Coolors: to chose a color scheme. [Coolors](https://coolors.co/palettes/trending)
 * Responsinator to check my website on all devices. [Responsinator](https://www.responsinator.com/).
-* Responsive web design columns and grids to help with css columns media query [Responsive Web Design Grid](https://www.w3schools.com/css/css_rwd_intro.asp).
 * README template from code institute fellow student [README.md template](https://github.com/ThijsTerporten/Climbing-Traveller/blob/master/README.md).
+* Design inspiration from [Web Dev Simplified](https://www.youtube.com/watch?v=28VfzEiJgy4)
+* All animations and audio Javascript from [PortEXE](https://www.youtube.com/watch?v=3uuQ3g92oPQ)
 
 ### Testing
 
 ## Testing Plan
 
-I started this project, based on a desktop, once I was happy with the look I worked on my media query starting with mobile and working up through the various break off points of various screen sizes. This proved to be a mistake, as I was writing so much css for each screen size, my css document started to get overwhelming. After talks with my mentor we decided to go down the columns route as it proved much easier and better for all screen sizes. 
+I started this project, based on a mobile, as it was qute a simple design layout, I used grids for teh game which is a 4 x 4 grid style, on smaller devices going to a 2 x 8 style.
 
 ### Testing User Stories from User Experience (UX) Section
 
 ## First Time Visitor Goals
 
-As a First Time Visitor, I want to easily understand the main purpose of the site and learn more about the organisation.
+As a First Time Visitor, I want to easily understand the instructions to play the game.
 
-* Upon entering the site, users are automatically greeted with a clean and easily readable navigation bar to go to the page of their choice. Underneath there is a Hero Image with Text and a "More Information" Call to action button.
-* The main points are made immediately with the navigation bar and call to action buttons
-* The user has three options, click the call to action buttons, scroll through the information, tips and help or click on the navigation bar to go directly to the place they need. b
-* As a First Time Visitor, I want to be able to easily be able to navigate throughout the site to find content.
+* Upon entering the site, users are automatically greeted with 'Click to start' button.
+* The main points are made immediately with the small paragraph telling a short story with instructions to play.
+* The user has 100 seconds to complete the game before the timer runs out and the 'Game Over' appears.
+* As a First Time Visitor, I want to be engaged and draw into the game, it is easy but the added element of the timer will be more exciting and give an elemnt of a challenge
 
-* The site has been designed to be fluid and informative, easy to navigate. Each link describes what section teh visitor will end up on.
-* Throughout the site there are call to actions, at the bottom there is a simple easy to fill out contact form.
+* The site has been designed to be fluid and easily explained, easy to navigate. .
+* At the bottom there is a simple easy to fill out contact or feedback form.
 * As a First Time Visitor, I want them to locate our social media links to see our following on social media to determine how trusted and known we are.
-
-* Once the new visitor has read the gone through teh site, they will notice helpful links to on-line forums and professional therapists.
-* The user can also scroll to the bottom of any page on the site to locate teh contact us form and social media links in the footer.
-* At the bottom of the sit on the Contact Us section, the user can see, that alternatively they can contact the organisation on social media which highlights the links to them.
 
 ## Returning Visitor Goals
 
-As a Returning Visitor, I want the visitor to find the where they were previously and feel reasured we are here to help.
+As a Returning Visitor, I want the visitor to remeber the rules of the game, be engaged by good graphics and sounds.
 
 
-As a Returning Visitor, I want them to find the best way to get in contact with us with any questions they may have.
+As a Returning Visitor, I want them to feel at ease to give honest feedback or developments to improve the game for them.
 
-* The navigation bar clearly highlights the "Contact Us" Page.
-
-* Here they can fill out the form on the page or alternatively they can message the organisation on social media.
+* They can fill out the form on the page or alternatively they can message the organisation on social media.
 * The footer contains links to the organisations Facebook, Twitter and Instagram page.
 * Whichever link they click, it will be open up in a new tab to ensure the user can easily get back to the website.
 * As a Returning Visitor, I want them to find the Facebook Group link so that they can join and interact with others in the community.
-
 * The Facebook Page can be found at the footer of every page and will open a new tab for the user and more information can be found on the Facebook page.
 
 ## Frequent User Goals
 
-As a Frequent User, I want to check to see if there are any newly added help or advice.
+As a Frequent User, I want to check to see if there are any newly added elements or levels to the game.
 
-* The user would already be comfortable with the website layout and can easily click the call to action buttons or teh navigation bar.
-* As a Frequent User, I want them to check to see if there are any new infomation, tips or help.
-* The user would already be comfortable with the website layout and can easily click the links to external sites.
+* The user would already be comfortable with the website layout and can easily start the game.
+* As a Frequent User, I want them to check to see if there are any new infomation, improvments or new levels added.
+* The user would already be comfortable with the website layout and can easily click the links to external social media sites.
 * As a Frequent User, I want them to follow us on social media.
 * There is a "Submit" button to the bottom of the input field which is located close to the field and can easily be distinguished.
 
@@ -178,12 +172,12 @@ As a Frequent User, I want to check to see if there are any newly added help or 
 
 * The Website was tested on Google Chrome, Internet Explorer, Microsoft Edge and Safari browsers.
 * The website was viewed on a variety of devices such as Desktop, Laptop, iPhone7, iPhone 8 & iPhoneX.
-* A large amount of testing was done to ensure that all sections were linking correctly.
+* A large amount of testing was done to ensure that the game can be played across all devices.
 * Friends and family members were asked to review the site and documentation to point out any bugs and/or user experience issues.
 
 ### Implementation
 
-As this is the first website that I created on my own I had no experience debugging on my own. Testing was mainly done using DevTools in google chrome. 
+As this is the second website that I created on my own I had very little experience debugging on my own. Testing was mainly done using DevTools in google chrome. 
 Starting mobile first then working my way up to bigger screen sizes. 
 Whenever an element wasn't located where I wanted it to be I would use the `element.style` box in DevTools to find a solution. 
 
@@ -192,27 +186,27 @@ I used the WC3 code validators to check my code for mistakes as well.
 Testing is done in the following way: 
 
 1. Scroll up and down the page checking for overflow and general positioning of items.
-2. Use navigation bar to move to section of the page. 
-3. In the form, try and click the button to check whether all fields are required to be filled in, check as well whether the e-mail part was set to e-mail.
-4. Check all links in the footer whether they react as intended by opening in a new tab (for links section in footer). 
+2. In the form, try and click the button to check whether all fields are required to be filled in, check as well whether the e-mail part was set to e-mail.
+3. Check all links in the footer whether they react as intended by opening in a new tab (for links section in footer). 
 5. Run through all of these steps for each different screen size.
-6. Use HTML and CSS validators from W3C schools to find mistakes in code.
+6. Use HTML and CSS validators from W3C schools to find mistakes in code plus JSHint to check the JavaScript.
 
 
 ### Results
 
-Once I had a general idea on how to run testing I followed all steps for each of my pages which gave me the following results:
+Once I had a general idea on how to run testing I followed all steps for each of my pages which gave me the following results for the html:
 
-* 2 class to one div, this was rectified
-* Tried having control="" on my iframe.
-* Tried having muted on my iframe. 
-* Tried having loop on my iframe.
-* I have 3 warnings left to rectify, all are 'Section lacks heading'.
+* stray end tag x 16 times - refering to the </img>
+* stray start tag - refering to the <script>
+
+* No errors for teh css
 
 
-* HTML-validator results: [index.html](assets/images/html-results/index-results.png)
+* HTML-validator results: [index.html](assets/images/html_validator_results.JPG)
 
-* CSS-validator results: [style.css](assets/images/css-validator.JPG)
+* CSS-validator results: [style.css](assets/images/css_validator_results.JPG)
+
+* JavaScript-validator results: [script.js](assets/images/js_validator_results.JPG)
 
 
 
@@ -280,6 +274,8 @@ $ git clone https://github.com/YOUR-USERNAME/YOUR-REPOSITORY
 * Responsinator to check my website on all devices. [Responsinator](https://www.responsinator.com/).
 * Responsive web design columns and grids to help with css columns media query [Responsive Web Design Grid](https://www.w3schools.com/css/css_rwd_intro.asp).
 * README template from code institute fellow student [README.md template](https://github.com/ThijsTerporten/Climbing-Traveller/blob/master/README.md).
+* Design inspiration from [Web Dev Simplified](https://www.youtube.com/watch?v=28VfzEiJgy4)
+* All animations and audio Javascript from [PortEXE](https://www.youtube.com/watch?v=3uuQ3g92oPQ)
 
 ## Content
 
