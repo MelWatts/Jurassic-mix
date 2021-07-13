@@ -36,20 +36,6 @@ class AudioController {
     }
 }
 
-function mute() {
-    document.getElementById('muted').addEventListener('mousedown', function(e) {
-    var musicControl = document.getElementById('muted');
-    if(musicControl.paused) {
-        document.getElementById('muted').classList.remove('muted-inactive');
-        musicControl.play();
-    } else {
-        document.getElementById('muted').classList.add('mutede-inactive');
-        musicControl.pause();
-    }
-    e.stopPropagation();
-}, true);
-}
-
 class MixOrMatch {
     constructor(totalTime, cards) {
         this.cardsArray = cards;
