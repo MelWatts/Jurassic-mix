@@ -5,26 +5,26 @@ document.addEventListener('DOMContentLoaded', () => {
 
 class AudioController {
     constructor() {
-        this.bgMusic = new Audio('assets/audio/roar.mp3');
-        this.flipSound = new Audio('assets/audio/flip.wav');
-        this.matchSound = new Audio('assets/audio/match.wav');
+        this.backTheme = new Audio('assets/audio/roar.mp3');
+        this.turn = new Audio('assets/audio/flip.wav');
+        this.paired = new Audio('assets/audio/match.wav');
         this.victorySound = new Audio('assets/audio/victory.wav');
         this.gameOverSound = new Audio('assets/audio/game-over.wav');
-        this.bgMusic.volume = 0.5;
-        this.bgMusic.loop = true;
+        this.backTheme.volume = 0.5;
+        this.backTheme.loop = true;
     }
     startMusic() {
-        this.bgMusic.play();
+        this.backTheme.play();
     }
     stopMusic() {
-        this.bgMusic.pause();
-        this.bgMusic.currentTime = 0;
+        this.backTheme.pause();
+        this.backTheme.currentTime = 0;
     }
     flip() {
-        this.flipSound.play();
+        this.turn.play();
     }
     match() {
-        this.matchSound.play();
+        this.paired.play();
     }
     victory() {
         this.stopMusic();
@@ -34,6 +34,20 @@ class AudioController {
         this.stopMusic();
         this.gameOverSound.play();
     }
+}
+
+function mute() {
+    document.getElementById('muted').addEventListener('mousedown', function(e) {
+    var musicControl = document.getElementById('muted');
+    if(musicControl.paused) {
+        document.getElementById('muted').classList.remove('muted-inactive');
+        musicControl.play();
+    } else {
+        document.getElementById('muted').classList.add('mutede-inactive');
+        musicControl.pause();
+    }
+    e.stopPropagation();
+}, true);
 }
 
 class MixOrMatch {
@@ -109,7 +123,7 @@ class MixOrMatch {
     }
 
     getCardType(card) {
-        return card.getElementsByClassName('card-value')[0].src;
+        return card.getElementsByClassName('value')[0].src;
     }
 
     startCountDown() {

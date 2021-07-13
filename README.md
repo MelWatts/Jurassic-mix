@@ -7,7 +7,7 @@ This project Jurassic Mix is a memory card game, the aim is to match each 2 card
 ## Showcase
 ![Showcase-screenshot](assets/images/desktop_wireframe.JPG)
 
-A deployed version of my website can be found [here.] (______________________________)
+A deployed version of my website can be found [here.] (https://melwatts.github.io/Jurassic-mix/)
 
 ## navigation
 

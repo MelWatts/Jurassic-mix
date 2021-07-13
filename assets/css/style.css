@@ -73,6 +73,11 @@ h3 {
   justify-content: space-between;
 }
 
+.game-container a {
+  color: #fff;
+  text-decoration: none;
+}
+
 .game-info {
   padding: 10px;
   background-color:#FCA311;
@@ -89,7 +94,7 @@ h3 {
   width: 80px;
 }
 
-.card-face {
+.face {
   position: absolute;
   width: 100%;
   height: 100%;
@@ -104,15 +109,15 @@ h3 {
   transition: transform 500ms ease-in-out
 }
 
-.card.visible .card-back {
+.card.visible .back {
   transform: rotateY(-180deg);
 }
 
-.card.visible .card-front {
+.card.visible .front {
   transform: rotateY(0);
 }
 
-.card.matched .card-value {
+.card.matched .value {
   animation: dance 1s linear infinite 500ms;
 }
 
@@ -128,23 +133,23 @@ h3 {
   }
 }
 
-.card-back {
+.back {
   background-color: black;
   border-color: #273617;
 }
 
-.card-front {
+.front {
   background-color: black;
   border-color: black;
   transform: rotateY(180deg);
 }
 
-.card-value {
+.value {
   transition: transform 100ms ease-in-out;
   transform: scale(.9);
 }
 
-.card-front:hover .card-value {
+.front:hover .value {
   transform: scale(1);
 }
 
@@ -154,7 +159,7 @@ h3 {
   transition: transform 100ms ease-in-out;
 }
 
-.card-back:hover .eyes {
+.back:hover .eyes {
   transform: translateY(0);
 }
 
